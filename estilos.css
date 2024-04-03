@@ -1,0 +1,182 @@
+
+/* Este CSS es para propósitos de personalización adicional que no está cubierto por Bootstrap 5 */
+:root {
+
+  --grey: #767268;
+  --blue: #1e2dea;
+  --celeste: #51D1F6;
+  --primary--color: #7ebbcc; 
+   --secondary-color: #fdb51b;
+}
+
+    
+    /* Estilos para la barra de navegación */
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand,
+.navbar-nav {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la animación de la barra de navegación */
+.navbar-collapse {
+  display: none;
+  position: absolute;
+  top: 100%; /* Inicialmente oculta */
+  left: 0;
+  width: 100%;
+  margin-top: -30px; /* Sube la barra de navegación 30px */
+  border-top: 1px solid #ced4da; /* Línea divisoria */
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.navbar-collapse.collapsing {
+  animation: deslizamiento 0.5s ease forwards;
+}
+
+@keyframes deslizamiento {
+  from {
+    transform: translateY(-100%); /* Animación para subir desde arriba */
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el hover */
+.navbar:hover .navbar-collapse {
+  display: block;
+}
+
+.navbar-brand {
+  margin-top: -75px; /* Subir el navbar-brand 35px */
+  font-size: 10em;
+}
+.navbar-nav .nav-link {
+  color: var(--celeste); /* Color normal del texto */
+  transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color); /* Color del texto al pasar el ratón por encima */
+}
+
+    /* ************************* navbar*/
+
+.navbar-nav .nav-link {
+  color: var(--celeste); /* Color normal del texto */
+  transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color); /* Color del texto al pasar el ratón por encima */
+}
+.agency {
+  background-color: var(--secondary-color);
+}
+
+.agency .p-agency {
+  color: black;
+}
+.agency .h2-agency {
+  color: var(--blue);
+}
+
+.banner__content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.banner__content button {
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+ 
+
+.display__container {
+  background-color: var(--secondary-color);
+  padding-bottom: 150px;
+  padding-top: 100px;
+}
+.places {
+  background-color: var(--primary--color);
+}
+#contact {
+	background-color: var(--primary--color);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--grey);
+}
+
+.container-footer {
+  display: flex; /* Agregado */
+  flex-direction: column; /* Agregado */
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura del footer */
+}
+
+/* Estilos para el texto del pie de página */
+.p-footer {
+  text-align: center;
+}
+.social__icons {
+  /* display: inline-block; */
+  margin: 0 10px;
+  font-size: 24px; /* Tamaño de los iconos */
+  transition: transform 0.3s ease; /* Transición suave para la animación */
+  justify-content: center;
+}
+.social__icons .ri-facebook-fil {
+  color: var(--blue);
+}
+.social__icons:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al hacer hover */
+}
+
+
+
+
+  /* Estilo predeterminado de la barra de navegación */
+  .navbar {
+    transition: background-color 0.3s;
+  }
+
+  /* Estilo para la barra de navegación cuando el botón de menú está activo */
+  @media (max-width: 768px) {
+    .navbar {
+      position: fixed; /* Para mantener el menú de navegación fijo */
+      width: 100%; /* Opcional: para que ocupe todo el ancho de la pantalla */
+      z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    }
+    .navbar-toggler:focus + .navbar-collapse,
+    .navbar-toggler:active + .navbar-collapse,
+    .navbar-toggler[aria-expanded="true"] + .navbar-collapse {
+      background-color: #007bff; /* Cambiar color de fondo al activar el menú en dispositivos móviles */
+    }
+
+    /* Estilo para cambiar el color de fondo solo al pasar el mouse sobre el botón de menú en dispositivos móviles */
+    .navbar-toggler:hover + .navbar-collapse {
+      background-color: #0056b3; /* Cambiar color de fondo al pasar el mouse sobre el botón de menú en dispositivos móviles */
+    }
+  }
+
+

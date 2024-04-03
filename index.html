@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .display__container {
+    overflow: hidden;
+  }
+
+  .display__card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .display__card img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+  
+<header style="background-image:  url('img/banner-4.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="bg-primary text-light py-5">
+
+  <div class="container banner-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lorem, ipsum.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon alert alert-primary justify-content-center"></span>
+        </button>
+        <div class="collapse  navbar-collapse  justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#places">Place</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#destination">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-6  slide-down text-center text-md-start">
+        <h1 class="display-3">Travel</h1>
+        <p class="lead slide-in-down">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsa ducimus laboriosam omnis nam eum voluptates ullam eos, ea molestiae quae sit sint temporibus sapiente eligendi, doloribus esse mollitia rem officia enim! Quae, dicta error.
+        </p>
+        <button class="  btn btn-info">Read more</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+   <!--Sección de agencia-->
+       <!--Sección de agencia-->
+    <section class="agency py-1" id="agency">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-8 col-xl-9 wow bounceIn" data-wow-delay=".3s">
+                  <h2 class=" h2-agency  text-center text-md-left font-weight-bold">Travel agency</h2>
+                  <p class="p-agency">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias libero omnis blanditiis officiis ullam, sapiente corrupti provident in. Id officiis inventore reiciendis dolorem natus numquam aspernatur quam deserunt sed eum?.</p>
+                  <p class="p-agency">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem aut laboriosam vero, assumenda, asperiores velit quibusdam placeat ratione quaerat consectetur explicabo nisi praesentium ad perspiciatis! Consectetur itaque numquam, cumque ipsam non asperiores impedit necessitatibus tempore assumenda illo hic eos facilis suscipit in officia? Quis, dicta?</p>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 wow bounceIn" data-wow-delay=".6s">
+                  <img src="img/mundo.svg" alt="La agencia">
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <section class="places bg-light py-5" id="places">
+    <div class="container">
+      <h2 class="h2-place text-center text-info ">Where to travel</h2>
+      <p class="p-place text-center">Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+     <!-- Repeat card structure for other countries  --------------------- -->
+        <div class="col">
+          <div class="card">
+            <img src="img/Place-1.jpg" class="card-img-top" alt="country">
+             <div class="card-body">
+    <h5 class="card-title">
+        <i class="ri-map-pin-2-fill" id="openMapModal1" style="cursor: pointer;"></i>historical Center
+    </h5>
+</div>
+          </div>
+        </div>
+        <!-- -------------------------------------  --------------------- -->
+        <div class="col">
+          <div class="card">
+            <img src="img/Place-2.jpg" class="card-img-top" alt="country">
+             <div class="card-body">
+         <h5 class="card-title">
+        <i class="ri-map-pin-2-fill" id="openMapModal2" style="cursor: pointer;"></i> historical Center
+    </h5>
+                  </div>
+         </div>
+        </div>
+     <!-- ------------------------------ --------- -->        
+        <div class="col">
+          <div class="card">
+            <img src="img/Place-3.jpg" class="card-img-top" alt="country">
+             <div class="card-body">
+    <h5 class="card-title">
+        <i class="ri-map-pin-2-fill" id="openMapModal3" style="cursor: pointer;"></i> historical Center
+    </h5>
+</div>
+          </div>
+        </div>
+   <!-- -------------------------------------------------------- -->  
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+
+            
+                            
+<!-- ******************************* -----    modal  --------************************************* -->
+  
+<!-- Modal 1 -->
+<div class="modal fade" id="mapModal1" tabindex="-1" aria-labelledby="mapModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLabel1">Location 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          
+
+              <div class="embed-responsive embed-responsive-16by9" style="overflow: hidden;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.024041395709!2d-99.13667685000001!3d19.4337385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92d2e0e4dbd%3A0x905574a740c4893d!2sCentro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1711493932645!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p>Geolocation ...</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="mapModal2" tabindex="-1" aria-labelledby="mapModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLabel2">Location 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+        
+
+              <div class="embed-responsive embed-responsive-16by9" style="overflow: hidden;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30171.35330851524!2d-98.22107741052082!3d19.04529965776084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0de93dda877%3A0xb42a9d723740b496!2sCentro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1711493963800!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p>Geolocation ...</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="mapModal3" tabindex="-1" aria-labelledby="mapModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLabel3">Location 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+
+              <div class="embed-responsive embed-responsive-16by9" style="overflow: hidden;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119519.42357007324!2d-100.38988811165058!3d20.58879322375322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b8fdc5b9255%3A0x97b094aa561b832f!2sSantiago%20de%20Quer%C3%A9taro%2C%20Qro.!5e0!3m2!1ses-419!2smx!4v1711493739947!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p>Geolocation ...</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!--  ****************   imagenes  ***************************-->
+   
+
+<section class="display__container" id="destination">
+  <div class="container">
+    <h2 class="section__title text-center text-primary ">Most visited places</h2>
+    <p class="section__subtitle text-center text-dark">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium itaque doloribus delectus.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="display__card grid-1">
+          <img src="img/galllery-1.jpg" class="card-img-top" alt="grid">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row row-cols-2 g-4">
+          <div class="col">
+            <div class="display__card">
+              <img src="img/gallery-2.jpg" class="card-img-top" alt="grid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="display__card">
+              <img src="img/gallery-3.jpg" class="card-img-top" alt="grid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="display__card">
+              <img src="img/gallery-4.jpg" class="card-img-top" alt="grid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="display__card">
+              <img src="img/gallery-5.jpg" class="card-img-top" alt="grid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ************************************************************************************* -->
+<main class="py-1" id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <h2 class="mb-2">Contact Form</h2>
+              <form action="#">
+                  <div class="form-group row">
+                      <label for="name" class="col-md-4 col-form-label">Name</label>
+                      <div class="col-md-8">
+                          <input class="form-control" type="text" id="name" name="nombre" placeholder=" Enter your name" data-toggle="tooltip" data-placement="top" title="Enter your name">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="e-mail" class="col-md-4 col-form-label">E-mail</label>
+                      <div class="col-md-8">
+                          <input class="form-control" type="text" id="e-mail" name="e-mail" placeholder="Enter your email" data-toggle="tooltip" data-placement="top" title="Enter your email">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="mensaje" class="col-md-4 col-form-label">Mensaje</label>
+                      <div class="col-md-8">
+                          <textarea class="form-control" rows="5" type="text" id="message" name="message" placeholder="Enter a message" data-toggle="tooltip" data-placement="top" title="Enter a message"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <div class="col-md-8 offset-md-4">
+                          <button type="submit" class="btn btn-info">Send</button>
+                          <button type="reset" class="btn btn-warning">Clean</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="col-md-4">
+              <h3>Contact details</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quo aspernatur rerum accusamus, dignissimos provident. Veritatis tempore iusto, quod, asperiores perspiciatis, dolorum voluptates ducimus dolorem nulla iste voluptate esse
+                  a.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quo aspernatur rerum accusamus, dignissimos provident. Veritatis tempore iusto, quod, asperiores perspiciatis, dolorum voluptates ducimus dolorem nulla iste voluptate esse
+                  a.</p>
+          </div>
+
+
+      </div>
+  </div>
+</main>
+
+<!-- ------------------------------------------------------------------------------- -->
+    <footer class=" footer text-light py-5 ">
+    <div class="container-footer d-flex ">
+        <div>
+            <h4 class="text-dark text-center">Lorem, ipsum.</h4>
+            <div class="social__icons text-center">
+                <span><i class="ri-facebook-fill"></i></span>
+                <span><i class="ri-github-line "></i></span>
+                <span><i class="ri-instagram-line"></i></span>
+                <span><i class="ri-linkedin-fill"></i></span>
+            </div>
+            <p class="p-footer">
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, rem minima illo animi iste commodi!
+            </p>
+        </div>
+    </div>
+</footer>
+   <script src="codigo-img-movimiento.js"></script>
+    <script src="modal.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
